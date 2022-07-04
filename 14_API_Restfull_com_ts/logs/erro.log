@@ -1,0 +1,10 @@
+2022-07-03 19:07:05:75 -  [31merror[39m: [31mnão foi possível conectar[39m
+2022-07-03 22:09:36:936 -  [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2022-07-03 22:11:45:1145 -  [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2022-07-03 22:15:17:1517 -  [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2022-07-03 22:15:30:1530 -  [31merror[39m: [31mErro no sistema: Cast to ObjectId failed for value "all" (type string) at path "_id" for model "Movie"[39m
+2022-07-04 09:42:53:4253 -  [31merror[39m: [31merro no sistema: Cast to ObjectId failed for value "62c22c17d1e7eed5ad8c8" (type string) at path "_id" for model "Movie"[39m
+2022-07-04 10:00:39:039 -  [31merror[39m: [31mError message: Cast to ObjectId failed for value "eee333333" (type string) at path "_id" for model "Movie"[39m
+2022-07-04 10:06:21:621 -  [31merror[39m: [31mError message: Cast to ObjectId failed for value "62c22e18df7a24ff33109b" (type string) at path "_id" for model "Movie"[39m
+2022-07-04 10:07:01:71 -  [31merror[39m: [31mError message: Cast to ObjectId failed for value "62c22e18df7a24ff33109b" (type string) at path "_id" for model "Movie"[39m
+2022-07-04 10:07:41:741 -  [31merror[39m: [31mError message: Cast to ObjectId failed for value "62c22e18df7a24ff33109b" (type string) at path "_id" for model "Movie"[39m
