@@ -1,5 +1,4 @@
 //Controla as ações de CRUD da base de Videos
-
 import { Request, Response } from 'express';
 
 //Model
