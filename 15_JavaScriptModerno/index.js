@@ -131,3 +131,27 @@ const users = [
 console.log(users.filter((u) => u.available));
 console.log(users.filter((u) => !u.available));
 
+// 4 - MAP
+title = '========== 4 - MAP ==========';
+console.log(title);
+
+
+const products = [
+    { name: 'Camisa', price: 10.78, category: 'Roupas' },
+    { name: 'Chaleira Eletrica', price: 34.99, category: 'Eletro' },
+    { name: 'TV 45 Polegadas', price: 974.99, category: 'Eletro' },
+    { name: 'Notebook', price: 2569.45, category: 'Eletronicos' },
+    { name: 'Bermuda', price: 29.99, category: 'Roupas' },
+];
+
+console.log('Antes......');
+console.log(products);
+
+products.map((product) => {
+    if (product.category === 'Roupas') {
+        product.onSale = true;
+    }
+});
+
+console.log('Depois......');
+console.log(products);
