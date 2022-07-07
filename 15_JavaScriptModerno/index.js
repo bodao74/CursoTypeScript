@@ -81,7 +81,7 @@ console.log(greetingMsg());
 const testArrow = () => console.log('Testou...');
 
 testArrow();
-
+/* 
 const user = {
     nome: 'Tiger',
     sayusername() {
@@ -100,7 +100,7 @@ const user = {
 }
 
 user.sayusername();
-user.sayUsernameArrow();
+user.sayUsernameArrow(); */
 
 
 // 3 - Filter
@@ -155,3 +155,111 @@ products.map((product) => {
 
 console.log('Depois......');
 console.log(products);
+
+
+// 5 - Template Literals
+title = '========== 5 - Template Literals ==========';
+console.log(title);
+
+const usrName = 'Ryan';
+const age = 33;
+
+console.log(`O nome do usuário é: ${usrName} e tem idade ${age}`);
+
+
+// 6 - Destructuring
+title = '========== 6 - Destructuring ==========';
+console.log(title);
+
+const fruits = ['maçã', 'pera', 'abacaxi', 'melão'];
+
+const [f1, f2, f3] = fruits;
+
+console.log(f1);
+console.log(f2);
+console.log(f3);
+
+const produtDetails = {
+    name: 'Mouse',
+    price: 45.22,
+    category: 'Perifericos',
+    color: 'cinza'
+};
+
+
+const { name: productName, price, category: prdCategory, color } = produtDetails;
+
+console.log(productName);
+console.log(price);
+console.log(prdCategory);
+console.log(color);
+
+
+// 7 Spread Operator
+title = '========== 7 Spread Operator ==========';
+console.log(title);
+
+
+const a1 = [1, 2, 3];
+const a2 = [4, 5, 6];
+
+const a3 = [...a1, ...a2];
+
+console.log(a1);
+console.log(a2);
+console.log(a3);
+
+
+const a4 = [7, ...a3, 8, 9];
+
+console.log(a4);
+
+
+const carName = { name: 'Cruze' };
+const carBrand = { brand: 'GM' };
+const carOtherInfos = { km: 10000, price: 120000 };
+
+const car = { ...carName, ...carBrand, ...carOtherInfos, color: 'White', wheels: 4 };
+
+console.log(car);
+
+// 8 - Classes
+class Product {
+    constructor(name, price) {
+        this.name = name;
+        this.price = price;
+    }
+    productWithDiscount(discount) {
+        return this.price * ((100 - discount) / 100);
+    }
+
+}
+
+const shirt = new Product('Gola V', 20);
+console.log(shirt.name);
+
+console.log(shirt.productWithDiscount(15));
+
+
+// 9 - Herança
+title = '========== 9 - Herança ==========';
+console.log(title);
+
+class ProductsWithAttributes extends Product {
+    constructor(name, price, colors) {
+        super(name, price);
+        this.colors = colors;
+    }
+    showColors() {
+        this.colors.forEach((element) => {
+            console.log(element);
+        });
+    }
+}
+
+
+const hat = new ProductsWithAttributes('Cuban Hat', 28.99, ['blue', 'creme', 'preto']);
+
+console.log(hat.name);
+hat.showColors();
+console.log(hat.productWithDiscount(15));
