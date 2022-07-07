@@ -263,3 +263,4 @@ const hat = new ProductsWithAttributes('Cuban Hat', 28.99, ['blue', 'creme', 'pr
 console.log(hat.name);
 hat.showColors();
 console.log(hat.productWithDiscount(15));
+
