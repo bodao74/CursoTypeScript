@@ -40,7 +40,7 @@ soma(10, 4);
 // 5 - Retorno Função tipado
 
 function greeting(nome: string): string {
-    return (`Ola: ${nome}`);
+    return (`Ola: ${ nome }`);
 }
 
 console.log(greeting('Faraday'));
@@ -88,9 +88,9 @@ showNumbers(1, 4)
 
 function advancedGreeting(firstname: string, lastname?: string) {
     if (lastname !== undefined) {
-        return (`Olá ${firstname} ${lastname}, tudo bem?`);
+        return (`Olá ${ firstname } ${ lastname }, tudo bem?`);
     }
-    return (`Olá ${firstname}, tudo bem?`);
+    return (`Olá ${ firstname }, tudo bem?`);
 }
 
 
@@ -103,7 +103,7 @@ console.log(advancedGreeting('Michael'));
 
 
 function showBalance(balance: number | string) {
-    return balance > 0 ? balance : 'Sem fundos';
+    return (balance > 0) ? balance : 'Sem fundos';
 }
 
 let bal: number | string = showBalance(-1);
@@ -137,7 +137,7 @@ console.log(showUserRole('Admin'));
 type ID = number | string;
 
 function showID(id: ID) {
-    return `O ID é: ${id}`;
+    return `O ID é: ${ id }`;
 }
 console.log(showID('FDGh67'));
 console.log(showID(33442));
@@ -145,7 +145,7 @@ console.log(showID(33442));
 
 // 13 - Interface
 
-interface Point{
+interface Point {
     x: number,
     y: number,
     z: number
@@ -153,9 +153,9 @@ interface Point{
 
 function showCoords(ponto: Point) {
     console.log(`Coordenadas: 
-    X: ${ponto.x}
-    Y: ${ponto.y}
-    Z: ${ponto.z}
+    X: ${ ponto.x }
+    Y: ${ ponto.y }
+    Z: ${ ponto.z }
     `);
 }
 
@@ -165,11 +165,11 @@ showCoords(objPto);
 
 // 14 - Interface x Type Alias
 
-interface Person{
+interface Person {
     name: string;
 }
 
-interface Person{
+interface Person {
     age: number;
 }
 
@@ -193,7 +193,7 @@ let test = 'testando';
 console.log(test);
 
 function getAcevo(nomeAcervo: 'Colecionador' | 'Atirador' | 'Caçador') {
-    return 'Acervo de: ' + nomeAcervo;    
+    return 'Acervo de: ' + nomeAcervo;
 }
 
 console.log(getAcevo('Atirador'));

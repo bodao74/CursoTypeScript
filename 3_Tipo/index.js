@@ -16,7 +16,7 @@ numeros.push(55);
 console.log(numeros);
 console.log(numeros[2]);
 // 3 - Any
-const arr1 = [1, 2, 3, 'Nome qulquer', true, [], { nome: 'Johnny' }];
+const arr1 = [1, 2, 3, 'Nome qualquer', true, [], { nome: 'Johnny' }];
 console.log(arr1);
 arr1.push({ valor: '1234' });
 console.log(typeof (arr1[3]));
@@ -67,7 +67,7 @@ console.log(advancedGreeting('John', 'Smith'));
 console.log(advancedGreeting('Michael'));
 // 10 - Union Type
 function showBalance(balance) {
-    return balance > 0 ? balance : 'Sem fundos';
+    return (balance > 0) ? balance : 'Sem fundos';
 }
 let bal = showBalance(-1);
 console.log('Saldo: ' + bal);

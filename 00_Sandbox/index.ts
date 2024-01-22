@@ -87,3 +87,13 @@ console.log(gun);
 
 console.log(acervo);
 //o codigo acima não funciona como esperado.....precisa ser em classes mesmo.
+
+
+const dados = [
+    { "id": 1, "name": 'o primeiro' },
+    { "id": 2, "name": 'o segundo' },
+    { "id": 3, "name": 'o terceiro' }
+];
+console.log(dados[2]);
+
+console.log(dados.find(d => d.name === 'o primeiro' ));
