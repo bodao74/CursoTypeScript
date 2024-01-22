@@ -1,0 +1,20 @@
+{
+  "name": "cursotypescript",
+  "version": "1.0.0",
+  "description": "arquivos curso typescript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node 8_classes/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bodao74/CursoTypeScript.git"
+  },
+  "author": "Bodao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bodao74/CursoTypeScript/issues"
+  },
+  "homepage": "https://github.com/bodao74/CursoTypeScript#readme"
+}
